@@ -1,0 +1,242 @@
+/*body {
+  margin: 0;
+  padding: 30px;
+  font-family: $font-family-sans-serif;
+  background-color: $uoc-bg;
+  color: $uoc-corporate;
+}
+
+.uoc-logo {
+  display: block;
+  margin-bottom: 20px;
+  width: 300px;
+  height: auto;
+}
+
+.uoc-title {
+  font-family: $font-family-serif;
+  font-size: 36px;
+  font-weight: 700;
+  color: $uoc-corporate;
+}*/
+
+
+
+/*.cv {
+}
+
+  .cv__cabecera {
+
+  }*/
+
+  .cv__logo {
+    width: 5%;
+    margin-top:  2%;
+    margin-left: 2%;
+  }
+
+  .cv__titulo {
+    width: 95%;
+    padding: 0px 10px;
+    margin: 1% 2% 0;
+    color: $color-terciario;
+    text-align: center;
+    text-decoration: underline;    
+    background-color: $color-principal;    
+    border-radius: 10px;
+  }
+
+  .cv__foto {
+    position: absolute;
+    top: 10px;
+    right: 2%;
+    width: 8%;
+    padding: 2px;
+    background-color: $color-bg;
+    border: 2px double $color-principal;
+    border-radius: 50%;
+  }
+
+
+
+
+
+/*****************************************************************************\
+  #SECCION
+\*****************************************************************************/
+.seccion {
+  width: 95%;
+  padding: 0 10px 10px;
+  margin: 2%;
+  overflow-x:auto; //table responsive
+  color: $color-principal;
+  background-color: $color-bg;
+  border: 2px solid $color-principal;
+  border-radius: 10px;
+}
+
+  .seccion__titulo {
+    position: relative;
+    top: -5px;
+    left: -5px;
+    padding: 5px;
+    color: $color-terciario;
+    text-align: center;
+    text-decoration: underline;
+    background-color: $color-principal;    
+    border-radius: 10px;    
+  }
+
+  /*.seccion__texto {
+
+  }*/
+
+
+
+
+
+/*****************************************************************************\
+  #TABLA
+\*****************************************************************************/
+.tabla {
+  width: 100%;
+  border: 2px solid $color-principal;
+}
+
+/*  .tabla__cabecera {
+
+  }
+
+  .tabla__contenido {
+    
+  }
+
+  .tabla__fila {
+
+  }*/
+
+  .tabla__fila--contraste:nth-child(odd) {
+    background-color: $color-bg-contrast;
+  }
+
+  .tabla__fila--centrada {
+    text-align: center;
+  }
+
+  .tabla__celda-cabecera {
+    padding: 0px 5px;
+    color: $color-terciario;
+    background-color: $color-principal;
+  }
+
+  .tabla__celda-cabecera--hidden {
+    background-color: $color-bg;
+  }  
+
+  /*.tabla__celda-contenido {
+    
+  }
+
+  .tabla__celda-texto {
+
+  }*/
+
+
+.tabla--no-borde {
+  border: 0;
+}
+
+@media only screen and (max-width: 500px)
+{
+  /*
+  table, thead, tbody, th, td, tr {
+    display: block;
+  }*/
+  body {
+    //background-color: red;
+    padding-right: 5%;
+  }
+
+  .tabla {
+    display: inline-block;
+  }
+  
+  .tabla__cabecera {
+    display: inline-block;
+    display: none;
+  }
+  
+  .tabla__contenido {
+    display: inline-block;
+  }
+  
+  .tabla__fila {
+    display: inline-block;
+    border: 2px solid $color-principal;
+  }
+
+  .tabla__celda-cabecera {
+    display: inline-block;
+  }
+  
+  .tabla__celda-contenido {
+    display: inline-block;
+    width: $ancho-celda;
+    padding-left: 1%;
+    text-align: right;
+        
+  }
+
+  .tabla__celda-contenido:before {
+    float: left;
+    width: mitad($ancho-celda); //49%;
+    padding-right: 1%;
+    
+    color: $color-terciario;  
+    text-align: left;
+    content: attr(data-label);
+    background-color: $color-principal;
+    
+    
+  }
+
+  .tabla--no-borde {
+    display: inline-block;
+    margin-right:2%;
+    .tabla__celda-contenido {
+      text-align: left;
+    }    
+  }
+
+  .tabla__celda-contenido--completo:before {
+    width: 99%;
+  }
+
+  .tabla__celda-contenido--secundario:before {
+    background-color: $color-cuaternario;
+  }
+
+  .tabla__celda-contenido--completo {
+    width: $ancho-celda;
+    margin-right: 2px;
+  }
+
+  .lista__elemento {
+    text-align: left;
+  }
+
+}
+
+
+/*****************************************************************************\
+  #LISTA
+\*****************************************************************************/
+.lista__elemento {
+  list-style:disc;
+}
+
+
+
+@function mitad($n) {
+  @return $n / 2;
+}
