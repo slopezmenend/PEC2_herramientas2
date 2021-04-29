@@ -2,17 +2,17 @@
   "name": "slopezmenend",
   "version": "0.1.0",
   "private": true,
-  "description": "PEC1: Herramientas CSS y HTML 2. Usando uoc-boilerplate",
+  "description": "PEC2: Herramientas CSS y HTML 2. Usando uoc-boilerplate",
   "scripts": {
     "parcel:serve": "parcel serve src/*.html -p 8123 --open",
     "parcel:build": "parcel build src/*.html --public-url ./ --dist-dir dist --no-source-maps --no-cache",
     "clean": "rimraf dist .cache .cache-loader .parcel-cache",
     "dev": "npm-run-all clean parcel:serve",
-    "build": "npm-run-all clean stylelint parcel:build",
+    "build": "npm-run-all clean parcel:build",
     "test": "echo 'Everything is working as expected ✅\nStart working on your project by running \\033[1mnpm run dev\\033[0m'",
     "just-deploy": "git add . && git commit -m \"VSCode commit\" && git push -v origin main",
     "deploy": "npm run build just-deploy",
-    "stylelint": "stylelint src/**/*.scss"
+    "stylelint": "stylelint src/**/*.sass"
   },
   "repository": {
     "type": "git",
@@ -33,9 +33,7 @@
     "rimraf": "^3.0.2",
     "sass": "^1.32.10",
     "sharp": "^0.27.2",
-    "stylelint": "^13.12.0",
-    "stylelint-config-recommended-scss": "^4.2.0",
-    "stylelint-scss": "^3.19.0"
+    "stylelint": "^13.12.0"
   },
   "dependencies": {
     "@fortawesome/fontawesome-free": "^5.15.3",
