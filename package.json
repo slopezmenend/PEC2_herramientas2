@@ -8,11 +8,11 @@
     "parcel:build": "parcel build src/*.html --public-url ./ --dist-dir dist --no-source-maps --no-cache",
     "clean": "rimraf dist .cache .cache-loader .parcel-cache",
     "dev": "npm-run-all clean parcel:serve",
-    "build": "npm-run-all clean parcel:build",
+    "build": "npm-run-all clean parcel:build stylelint",
     "test": "echo 'Everything is working as expected ✅\nStart working on your project by running \\033[1mnpm run dev\\033[0m'",
     "just-deploy": "git add . && git commit -m \"VSCode commit\" && git push -v origin main",
     "deploy": "npm run build just-deploy",
-    "stylelint": "stylelint src/**/*.sass"
+    "stylelint": "stylelint src/**/*.scss"
   },
   "repository": {
     "type": "git",
@@ -37,6 +37,13 @@
   },
   "dependencies": {
     "@fortawesome/fontawesome-free": "^5.15.3",
-    "stylelint-order": "^4.1.0"
+    "@popperjs/core": "^2.9.2",
+    "bootstrap": "^5.0.0-beta3",
+    "css-loader": "^5.2.4",
+    "postcss-loader": "^5.2.0",
+    "style-loader": "^2.0.0",
+    "stylelint-config-recommended-scss": "^4.2.0",
+    "stylelint-order": "^4.1.0",
+    "stylelint-scss": "^3.19.0"
   }
 }

@@ -4,43 +4,118 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, user-scalable=no">
-    <link rel="stylesheet" type="text/css" href="./assets/styles/main.sass"><!-- do not remove this line! -->
+    <link rel="stylesheet" type="text/css" href="./assets/styles/main.scss"><!-- do not remove this line! -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
     <title>PEC2 - Herramientas2 - SLopezMenend</title>
   </head>
-  <body>
+  <body class="body">
     <header class="header">
+       <nav class="navbar navbar-expand-lg sticky-top navbar-dark bg-dark navbar-toggleable-sm"> 
+        <a class="navbar-brand" href="index.html">
+          <img src="assets/images/logo.png" class="header__logo" alt="logotipo de la banda">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarText">
+          <ul class="navbar-nav">
+            <li class="nav-item btn btn-outline-primary btn-margin-left active">
+              <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item btn btn-outline-primary btn-margin-left">
+              <a class="nav-link" href="grupo.html">Grupo</a>
+            </li>
+            <li class="nav-item btn btn-outline-primary btn-margin-left">
+              <a class="nav-link" href="biografia.html">Biografia</a>
+            </li>
+            <li class="nav-item btn btn-outline-primary btn-margin-left">
+              <a class="nav-link" href="discografia.html">Discografia</a>
+            </li>
+
+          </ul>
+        </div>
+      </nav>      
+
+      <!--
       <img class="header__logo" src="assets/images/logo.png" alt="logotipo de la banda">
       <div class="header__menu-container">
         <nav class="header__menu-nav">
             <ul class="header__menu-lista">
                 <li class="header__menu-elemento"><a class="header__menu-item" href="grupo.html">grupo</a></li>
-                <li class="header__menu-elemento"><a class="header__menu-item" href="conciertos.html">conciertos</a></li>
+                <li class="header__menu-elemento"><a class="header__menu-item" href="biografia.html">biografia</a></li>
                 <li class="header__menu-elemento"><a class="header__menu-item" href="discografia.html">discografia</a></li>
             </ul>
         </nav>
       </div>
+      -->
     </header>
-
-    <main class="main">
-      <h1 class="main__title"><img class="main__titleimage" src="assets/images/nombre-banda.png" alt="MAREA"></h1>
-      <img class="main__fotobanda" src="assets/images/banda.jpg" alt="Foto de la banda">      
-      <div class="bloque">
-        <p class="bloque__parrafo">Marea es una banda de rock fundada por Kutxi Romero en Berriozar, Navarra, el día 24 de diciembre de 1997, siendo sus componentes desde entonces Kutxi Romero, como letrista y cantante; Kolibrí Díaz y César Ramallo a las guitarras; Eduardo Beaumont “Piñas” al bajo y segunda voz; y Alén Ayerdi a la batería.</p>
-        <p class="bloque__parrafo">El primer nombre del grupo fue La patera, y bajo dicha denominación grabaron en 1999 su primer disco, en un principio autoeditado, titulado Marea. Es al ir a registrar el nombre de la banda cuando descubren que no pueden hacerlo porque la marca ya es propiedad de otro grupo, por lo que deciden llamarse Marea. Finalmente, dicha grabación sale a la calle con el título de La patera, bajo el auspicio de la multinacional RCA, sello que les propone hacer una mini gira con el grupo sevillano Reincidentes, realizando conjuntamente una docena de conciertos que les permite salir de Navarra y darse a conocer al público estatal.</p>
-        <p class="bloque__parrafo">Después de ciertas discrepancias con RCA, el grupo rompe contrato en el año 2000, firmando para el siguiente trabajo con GOR, sello navarro independiente que publicará su segundo álbum, Revolcón (reeditado en 2017 por El Dromedario Records). No tardan en aparecer los problemas con la nueva discográfica, por lo que se ponen otra vez a la labor de buscar sello para editar su siguiente trabajo. Es así como recalan en la multinacional DRO, con la que publican en 2002 Besos de perro, su tercer disco. El álbum se graba bajo la supervisión y producción de Iñaki “Uoho”’ Antón.</p>
-        <p class="bloque__parrafo">Besos de perro llega a ser disco de oro por primera vez en la historia del grupo (distinción que alcanzarán a partir de ahora todos sus trabajos), y, desde el mismo momento de su salida, hace que el grupo explote y se consolide definitivamente en la escena, llevándole a protagonizar una gran gira que concluirá en diciembre de dicho 2002. Llegados a este punto, deciden tomarse un descanso hasta la publicación de su siguiente álbum, 28.000 puñaladas, que verá la luz en 2004. Disco de platino desde su misma fecha de salida, de su mano se embarcan en una nueva gran gira que se extiende hasta 2005. Una vez concluida, y tal y como hicieran tres años antes, protagonizan un nuevo parón en su actividad pública, nuevamente de dos años de duración.</p>
-        <p class="bloque__parrafo">A una con 2007, la banda comienza a trabajar en el llamado a ser su quinto álbum, Las aceras están llenas de piojos. Con el mismo, publicado en primavera, protagonizan nuevamente un espectacular tour, cruzando por primera vez el océano Atlántico y llegando a países como Argentina, Uruguay o Chile. Ya en 2008, y tras concluir la gira, se edita el disco en vivo Las putas más viejas del mundo, grabación que no presentarán en directo,  tomándose un nuevo descanso (algo ya habitual en el proceder del grupo), que se prolongará hasta 2011, momento en el que se lanza En mi hambre mando yo, disco que nuevamente les lleva a girar por España y el continente americano hasta finales de 2012.</p>
-        <p class="bloque__parrafo">En este momento, primavera de 2019, y tras más de seis años sin actividad, Marea nos presenta El azogue, su séptimo disco. De manos de sus nuevas canciones subirá de nuevo la temperatura. Volverá a subir la Marea.</p>
+    <main>
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item active" aria-current="page">Home</li>
+        </ol>
+      </nav>
+      <div class="wrapper"> 
+        <div class="container__titleimage h1">MAREA</div>
+        <div class="container__fotobanda"><img class="container__fotobanda" src="assets/images/banda.jpg" alt="Foto de la banda"></div>
+        <div class="bloque__parrafo"><p>Marea es una banda de rock fundada por Kutxi Romero en Berriozar, Navarra, el día 24 de diciembre de 1997, siendo sus componentes desde entonces Kutxi Romero, como letrista y cantante; Kolibrí Díaz y César Ramallo a las guitarras; Eduardo Beaumont “Piñas” al bajo y segunda voz; y Alén Ayerdi a la batería.</p></div>
       </div>
+      <!--
+      <div class="container">
+        <h1 class="container__title"><img class="container__titleimage" src="assets/images/nombre-banda.png" alt="MAREA"></h1>
+        <img class="container__fotobanda" src="assets/images/banda.jpg" alt="Foto de la banda">      
+        <div class="bloque">
+          <p class="bloque__parrafo">Marea es una banda de rock fundada por Kutxi Romero en Berriozar, Navarra, el día 24 de diciembre de 1997, siendo sus componentes desde entonces Kutxi Romero, como letrista y cantante; Kolibrí Díaz y César Ramallo a las guitarras; Eduardo Beaumont “Piñas” al bajo y segunda voz; y Alén Ayerdi a la batería.</p>
+        </div>
+      </div>
+      -->
     </main>
-
     <footer class="footer">
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark d-flex justify-content-between"> 
+        <div class="d-flex justify-content-between">
+          <a class="navbar-brand" href="#">
+            <img src="assets/images/logo.png" class="header__logo" alt="logotipo de la banda">
+          </a>  
+
+          <ul class="navbar-nav align-self-center">          
+            <li class="nav-item btn btn-outline-primary btn-margin-left active">
+              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item btn btn-outline-primary btn-margin-left">
+              <a class="nav-link" href="grupo.html">Grupo</a>
+            </li>
+            <li class="nav-item btn btn-outline-primary btn-margin-left">
+              <a class="nav-link" href="biografia.html">Biografia</a>
+            </li>
+            <li class="nav-item btn btn-outline-primary btn-margin-left">
+              <a class="nav-link" href="discografia.html">Discografia</a>
+            </li>
+          </ul>
+        </div>
+
+          <div>
+            <li class="nav-item btn btn-outline-primary btn-margin-left">
+              <a class="nav-link" href="#"><img class="footer__icono" src="assets/images/Google-plus-icon.png" alt="Icono Google Plus"></a>
+            </li>     
+            <li class="nav-item btn btn-outline-primary btn-margin-left">
+              <a class="nav-link" href="#"><img class="footer__icono" src="assets/images/icono-twitter.png" alt="Icono Twitter"></a>
+            </li>  
+            <li class="nav-item btn btn-outline-primary btn-margin-left">
+              <a class="nav-link" href="#"><img class="footer__icono" src="assets/images/icono-facebook.png" alt="Icono Facebook"></a>
+            </li>                                  
+          </div>          
+      </nav>  
+      <!--
       <img class="footer__logo" src="assets/images/logo.png" alt="logotipo de la banda">
       <div class="footer__menu-container">
         <nav class="footer__menu-nav">
             <ul class="footer__menu-lista">
                 <li class="footer__menu-elemento"><a class="footer__menu-item" href="grupo.html">grupo</a></li>
-                <li class="footer__menu-elemento"><a class="footer__menu-item" href="conciertos.html">conciertos</a></li>
+                <li class="footer__menu-elemento"><a class="footer__menu-item" href="biografia.html">biografia</a></li>
                 <li class="footer__menu-elemento"><a class="footer__menu-item" href="discografia.html">discografia</a></li>
             </ul>
         </nav>
@@ -49,7 +124,7 @@
           <a class="redessociales__item" href="#"><img class="redessociales__itemimage" src="assets/images/icono-twitter.png"></a>
           <a class="redessociales__item" href="#"><img class="redessociales__itemimage" src="assets/images/icono-facebook.png"></a>
         </div>
-      </div>
+      </div>-->      
     </footer>
   </body>
 </html>

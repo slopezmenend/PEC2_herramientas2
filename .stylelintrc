@@ -1,5 +1,5 @@
 {
-  "extends": "stylelint-config-recommended-sass",
+  "extends": "stylelint-config-recommended-scss",
   "plugins": [
     "stylelint-order"
   ],
